@@ -6,7 +6,7 @@
             <h1>{{quote.name}}</h1>
             <p>{{quote.quoteTitle}}</p>
             <a  (click)= "showDetails(i)" class="btn btn-sm btn-block btn btn-success">See more</a>
-            <app-quote-details [quote]="quote" *ngIf="quote.seeMore" [quote]="quote"></app-quote-details>
+            <app-quote-details [quote]="quote" *ngIf="quote.seeMore" [quote]="quote" (deleteQuote)= 'deleteThisQuote(event,i)'></app-quote-details>
         </div>
     </div>
    
