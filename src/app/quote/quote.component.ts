@@ -16,6 +16,10 @@ export class QuoteComponent implements OnInit {
     new Quote ('Mikey','The great myth', 'The great myth of our times is that technology is communication.', 
     'Libby Larsen', new Date ( 2019, 6, 3), 0, 0)
   ];
+  showDetails(index){
+    this.quotes(index).seeMore = !this. quotes(index).seeMore;
+
+  }
   constructor() { }
 
   ngOnInit(): void {
