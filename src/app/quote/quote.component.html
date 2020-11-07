@@ -6,9 +6,12 @@
             <h1>{{quote.name}}</h1>
             <p>{{quote.quoteTitle}}</p>
             <a class="btn btn-sm btn-block btn btn-success">See more</a>
+            <app-quote-details [quote]="quote"></app-quote-details>
         </div>
     </div>
+   
+<div *ngIf="quotes.length <1" class="alert alert-warning"> No quotes available.
 
-    </div>
+</div>
 </div>
 
