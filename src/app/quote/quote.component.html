@@ -3,6 +3,8 @@
     <div class="col-md-6">
         <h1>Favourites Quotes in Angular</h1>
         <div *ngFor="let quote of quotes: let i=index">
+            <h1>{{quote.name}}</h1>
+            <p>{{quote.quoteTitle}}</p>
             <a class="btn btn-sm btn-block btn btn-success">See more</a>
         </div>
     </div>

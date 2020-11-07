@@ -1,5 +1,4 @@
 export class Quote {
- public id: number;
 public  name: string;
  public quoteTitle: string;
  public quote: string;
