@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-   new Quote ( 'Charles', 'Human spirit', 'The human spirit must prevail over technology to allow humans be in charge.',
-    'Albert Einstein',  new Date(2020, 7, 12)),
-    new Quote ('Wendy', 'Technology…', 'Technology… the knack of so arranging  that we don’t have to experience it.',
-    'Max Frisch', new Date(2020, 7, 14)),
-    new Quote ('Mikey', 'The great myth', 'The great myth of our times is that technology is communication.',
-    'Libby Larsen', new Date(2020, 7, 30))
+   new Quote ( 'Enock', 'Human spirit', 'The human spirit must prevail over technology to allow humans be in charge.',
+    'Alberto',  new Date(2020, 7, 3)),
+    new Quote ('Benard', 'Technology…', 'Technology… the knack of so arranging  that we don’t have to experience it.',
+    'Justus', new Date(2020, 7, 14)),
+    new Quote ('Gidion', 'The great myth', 'The great myth of our times is that technology is communication.',
+    'Einstin', new Date(2020, 7, 30))
   ];
   quoteTitle: string;
 

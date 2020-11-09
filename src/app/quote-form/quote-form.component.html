@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<div class="container-fluid"> <br> <br>
         <h2 class="heading">Add Quote</h2>
         <form (ngSubmit)='submitQuote()' #quotesForm='ngForm'>
             <div class="form-group">
@@ -9,7 +9,7 @@
                 <input type="text" class="form-control" id='quotetitle' [(ngModel)]="newQuote.quoteTitle" name='quoteTitle' #name='ngModel' required>
                 <label for="submitted">Quote :</label>
                 <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #name='ngModel' required>
-                <label for="submitted">Quote formQuoteAuthor :</label>
+                <label for="submitted">QuoteAuthor :</label>
                 <input type="text" class="form-control" id="quoteAuthor" [(ngModel)]="newQuote.quoteAuthor" name="quoteAuthor" #name='ngModel' required>
                 <label for="submitted">Post Date :</label>
                 <input type="date" class="form-control" id="postDate" [(ngModel)]="newQuote.postDate" name="completeDate" #name='ngModel' required>
@@ -19,3 +19,4 @@
         <hr>
       
       </div>
+      ng build --prod --base-href "https://BenardBett.github.io/Quotes-App/"
