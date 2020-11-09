@@ -1,2 +1,13 @@
-<small>{{quote.quote}} | {{quote.quoteAuthor}} | {{quote.date}}</small>
-<button (click)="delete(true)">Delete</button>
+<div class="text-center container">
+    <button style="margin-left:10px;" (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
+    <button style="margin-left:10px;" class="btn btn-outline-success" (click)='likes($event)'> {{quote.likes}} <i
+            class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+    <button style="margin-left:20px;" class="btn btn-outline-warning" (click)='dislikes($event)'>{{quote.dislikes}} <i
+            class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+</div>
+
+
+
+
+
+
